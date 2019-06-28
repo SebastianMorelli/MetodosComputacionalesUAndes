@@ -14,7 +14,7 @@ float product (int,float);
 
 int main()
 {
-  cout<<product(a,b)
+  cout<< "el producto de a por b es:" << product(a,b)<< endl;
   return 0;
 }
 
