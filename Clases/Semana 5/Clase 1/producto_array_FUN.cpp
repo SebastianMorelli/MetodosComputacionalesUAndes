@@ -15,7 +15,7 @@ int punto (int arra[], int arrb[]);
 
 int main()
 {
-    cout<<"El producto elemento a elemento de los Arrays es"<<product(array1,array2)<<endl;
+    cout<<"El producto elemento a elemento de los Arrays es"<<producto(array1,array2)<<endl;
     //cout<<"El producto punto de los Arrays es"<<punto(array1,array2)<<endl;
     return 0;
 }
