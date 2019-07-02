@@ -15,9 +15,14 @@ int punto (int arra[], int arrb[]);
 
 int main()
 {
-    cout<<"El producto elemento a elemento de los Arrays es "<<producto(array1,array2)<<endl;
+    cout<<"El producto elemento a elemento de los Arrays es: [";
     for(int i = 0, i<5; i++){
-        cout<<p[i];
+        if(i<4){
+        cout<<producto(array1,array2)[i]<<', ';
+        }
+        else{
+            cour<<producto(array1,array2)[i]<<']';
+        }
     }
     //cout<<"El producto punto de los Arrays es"<<punto(array1,array2)<<endl;
     return 0;
