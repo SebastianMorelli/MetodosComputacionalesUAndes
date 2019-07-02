@@ -10,7 +10,7 @@ int n2 = 77;
 
 //Declaración funciones
 
-int fact(int);
+double fact(int);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
   return 0;
 }
 
-int fact (int Val)
+double fact (int Val)
 {
   int cont = 1;
   for(int i = 1; i <= Val; i ++)
