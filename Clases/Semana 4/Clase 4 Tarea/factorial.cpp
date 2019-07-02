@@ -27,4 +27,5 @@ int fact (int Val)
   {
     cont = cont*i;
   }
+  return cont;
 }
