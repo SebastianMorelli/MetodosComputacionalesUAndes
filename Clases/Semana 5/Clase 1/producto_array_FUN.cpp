@@ -27,7 +27,7 @@ int producto (int Val1[], int Val2[])
     p = prod;
     for( int i = 0; i <=5; i++){
         prod[i] = Val1[i]*Val2[i];
-        return p[i];
+        return p;
     }
 }
 
