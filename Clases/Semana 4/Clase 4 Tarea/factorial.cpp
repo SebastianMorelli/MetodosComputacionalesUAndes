@@ -5,7 +5,8 @@ using namespace std;
 
 //Declaración Variables 
 
-int n = 7;
+int n1 = 7;
+int n2 = 77
 
 //Declaración funciones
 
@@ -13,7 +14,8 @@ int fact(int);
 
 int main()
 {
-  cout<<fact(n)<<endl;
+  cout<<fact(n1)<<endl;
+  cout<<fact(n2)<<endl;
 }
 
 int fact (int Val)
@@ -23,5 +25,4 @@ int fact (int Val)
   {
     cont = cont*i;
   }
-  cout<<cont;
 }
