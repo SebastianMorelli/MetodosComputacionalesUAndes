@@ -17,7 +17,7 @@ int main()
 {
     cout<<"El producto elemento a elemento de los Arrays es "<<producto(array1,array2)<<endl;
     for(int i = 0, i<5; i++){
-        cout<<p[i]
+        cout<<p[i];
     }
     //cout<<"El producto punto de los Arrays es"<<punto(array1,array2)<<endl;
     return 0;
@@ -31,7 +31,7 @@ int * producto (int Val1[], int Val2[])
     for( int i = 0; i<5; i++){
         prod[i] = Val1[i]*Val2[i];
     }
-    return p
+    return p;
 }
 
 //int punto (int Val1[], int Val2[])
