@@ -19,7 +19,7 @@ int main()
 int fact (int Val)
 {
   int cont = 1;
-  for(int i = 1, i <= Val, i ++)
+  for(int i = 1; i <= Val; i ++)
   {
     cont = cont*i;
   }
