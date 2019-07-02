@@ -14,7 +14,7 @@ int fact(int);
 
 int main()
 {
-  //cout<<fact(n1)<<endl;
+  cout<<fact(n1)<<endl;
   cout<<fact(n2)<<endl;
   
   return 0;
