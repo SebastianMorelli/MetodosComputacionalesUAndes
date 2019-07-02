@@ -18,13 +18,13 @@ int main()
     cout<<"El producto elemento a elemento de los Arrays es: [";
     for(int i = 0; i<5; i++){
         if(i<4){
-            cout<<producto(array1,array2)[i]<<', ';
+            cout<<producto(array1,array2)[i]<<", ";
         }
         else{
-            cout<<producto(array1,array2)[i]<<']';
+            cout<<producto(array1,array2)[i]<<"]"<<endl;
         }
     }
-    //cout<<"El producto punto de los Arrays es"<<punto(array1,array2)<<endl;
+    cout<<"El producto punto de los Arrays es: "<<punto(array1,array2)<<endl;
     return 0;
 }
 
@@ -39,7 +39,11 @@ int * producto (int Val1[], int Val2[])
     return p;
 }
 
-//int punto (int Val1[], int Val2[])
-//{
-    
-//}
+int punto (int Val1[], int Val2[])
+{
+    int prodpunt;
+    for( int i = 0; i<5; i++){
+        prodpunt = prodpunt + Val1[i]*Val2[i];
+    }
+    return prodpunt;
+}
