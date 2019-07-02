@@ -13,14 +13,14 @@ int fact(int);
 
 int main()
 {
-  cout<<fact(n)<<endl
+  cout<<fact(n)<<endl;
 }
 
 int fact (int Val)
 {
-  int cont = 1
+  int cont = 1;
   for(int i = 1, i <= Val, i ++)
   {
-    cont = cont*i
+    cont = cont*i;
   }
 }
