@@ -10,6 +10,9 @@ int array2[5] = {10,20,30,40,50};
 
 //Declaración funciones
 
+int producto(int arra[], int arrb[]);
+int punto (int arra[], int arrb[]);
+
 int main()
 {
     cout<<"El producto elemento a elemento de los Arrays es"<<product(array1,array2)<<endl;
@@ -23,6 +26,7 @@ int producto (int Val1[], int Val2[])
     for( int i = 0; i <=5; i++){
         prod[i] = Val1[i]*Val2[i];
         return prod[i];
+    }
 }
 
 //int punto (int Val1[], int Val2[])
