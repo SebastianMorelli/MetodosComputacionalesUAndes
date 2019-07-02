@@ -23,4 +23,5 @@ int fact (int Val)
   {
     cont = cont*i;
   }
+  cout<<cont
 }
