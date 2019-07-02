@@ -16,16 +16,19 @@ int punto  (int, int);
 int main()
 {
     cout<<"El producto elemento a elemento de los Arrays es" << product(array1,array2) << endl;
-    cout<<"El producto punto de los Arrays es" << punto(array1,array2) << endl;
+    //cout<<"El producto punto de los Arrays es" << punto(array1,array2) << endl;
     return 0;
 }
 
-int producto (int Val1, int Val2)
+int producto (int Val1[], int Val2[])
 {
-    
+    int prod[5];
+    for i ( int i = 0; i <=5; i++){
+        prod[i] = Val1[i]*Val2[i];
+        return prod[i];
 }
 
-int punto (int Val1, int Val2)
-{
+//int punto (int Val1[], int Val2[])
+//{
     
-}
+//}
