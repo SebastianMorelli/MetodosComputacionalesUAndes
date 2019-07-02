@@ -20,7 +20,7 @@ int main()
     return 0;
 }
 
-int producto (int Val1[], int Val2[])
+int * producto (int Val1[], int Val2[])
 {
     int *p;
     int prod[5];
