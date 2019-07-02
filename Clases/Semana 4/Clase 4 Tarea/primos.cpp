@@ -17,7 +17,7 @@ int main()
   cout<<"Número incial del Intervalo:" ;
   cin >> num1;
   cout<<"Número final del Intervalo:" ;
-  cin >> num2
+  cin >> num2;
   
   cout<<primos(num1,num2)<<endl;
   
