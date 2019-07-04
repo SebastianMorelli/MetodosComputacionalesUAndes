@@ -1,4 +1,4 @@
-//Este código halla la derivada de coseno bajo un intervalo y un número de puntos dado.
+//Este código soluciona ecuaciones diferenciales de primer orden
 
 #include <iostream>
 #include <cmath>
@@ -6,66 +6,40 @@ using namespace std;
 
 //Declaración Variables 
 
-float inicio;
-float finale;
-int numpunt;
-float *x;
+float h = 0.01;
+float mini = 0.0;
+float maxi = 4.0;
+int numpunt = (maxi - mini)/h;
+
 
 //Declaración funciones
 
-float * linspace(float ini, float fin, int div);
-
-float * coseno(float arr1[], int div);
-
-float * deriv(float arra[], float arrb[]);
+float * euler(float arr1[], float arr2[], int div);
 
 int main()
 {
-    cout<<"Ingrese el inicio del intervalo: ";
-    cin>>inicio;
-    cout<<"Ingrese el final del intervalo: ";
-    cin>>finale;
-    cout<<"Ingrese el número de puntos del intervalo: ";
-    cin>>numpunt;
-    
-    x = linspace(inicio,finale,numpunt);
-    for(int i = 0; i<=numpunt;i++){
-    cout<<coseno(x,numpunt)[i]<<", ";}
-    
-    cout<<"El arreglo con las derivdas numéricas es: ["<<endl;
-    for(int i = 0; i<numpunt; i++){
-        if(i<(numpunt//-1)){
-            cout<<deriv(interval,cos)[i]<<", ";
+    float x[numpunt];
+    float y[numpunt];
+    cout<<"La solución a la ecuación diferencial por el método de euler es: [";
+    for (int i = 0; i < numpunt; i++){
+        if(i < numpunt-1){
+            cout<<euler(x,y,numpunt)[i]<<", ";
         }
+        
         else{
-            cout<<deriv(interval,cos)[i]<<"]"<<endl;
+            cout<<euler(x,y,numpunt)[i]<<"]";
         }
-
-    return 0;
-}
-
-
-float * linspace (float ini, float fin, int div){
-    float interval = (fin - ini)/div;
-    float linspace[div];
-    float *p = linspace;
-    for(int i = 0; i <= div; i++){
-        for(int j = ini; j <= fin; j += interval){
-            linspace[i] = j;
-        }
-    return p;
     }
 }
 
-float * coseno(float arr1[], int div){
-    float arraycos[div];
-    float *p = arraycos;
-    for (int i = 0; i<=div; i++){
-        arraycos[i] = cos(arr1[i]);
+float * euler(float arr1[], float arr2[], int div){
+    arr1[0] = mini;
+    arr2[0] = 1.0;
+    float *p0 = arr1;
+    float *p1 = arr2;
+    for(int i = 1; i <= div; i++){
+        arr1[i] = arr1[i-1] + h;
+        arr2[i] = arr2[i-1] + h * (-arr2[i-1]);
     }
-    return p;
-}
-
-float * deriv (float arra[], float arrb[]){
-    
+    return p1;
 }
